@@ -1,35 +1,45 @@
 # UNICEF Data Analysis Project
-This repository contains a data analysis report on UNICEF indicators created for the BAA1030 assignment.
-Project Overview
-This project analyzes UNICEF data to raise awareness about a specific world issue. The analysis includes various visualizations created with the plotnine package and a narrative explaining the findings.
-Data Sources
-The analysis uses the following data files:
+# Youth Mortality and Economic Indicators (1990–2021)
 
-unicef_indicator_1.csv
-unicef_indicator_2.csv
-unicef_metadata.csv
+This project explores the relationship between youth mortality (ages 15–24) and economic indicators such as GDP per capita from 1990 to 2021, using data sourced from UNICEF and the World Bank. The analysis is presented using Python, Quarto, and several powerful data science libraries.
 
-Visualizations
-The report includes:
+## 📊 Project Overview
 
-A world map chart showing geographical distribution
-A bar chart comparing key metrics
-A scatterplot with a linear regression line showing relationships between variables
-A time-series chart showing trends over time
+The goal of this project was to understand how youth death rates vary across countries and over time, and whether economic development correlates with reductions in youth mortality.
 
-Technical Implementation
-The report is created using Quarto and published with GitHub Pages. The visualizations are generated using the plotnine package in Python.
-Viewing the Report
-The rendered report can be viewed at: https://yourusername.github.io/repository-name
-Project Structure
+Four visualizations are used to illustrate different dimensions of this relationship, covering trends over time, geographic distribution, and correlations with economic metrics.
 
-index.qmd: Main Quarto document containing the analysis and narrative
-data/: Directory containing the UNICEF data files
-README.md: This file
+## 🧪 Technologies Used
 
-How to Run Locally
+- **Python** (Pandas, Plotnine, Matplotlib)
+- **Quarto** for report rendering
+- **VS Code** as the development environment
+- **Git & GitHub** for version control
+- **Jupyter-style notebooks** embedded in `.qmd` for literate programming
 
-Clone this repository
-Install the required packages: pip install pandas numpy plotnine matplotlib geopandas
-Open index.qmd in VS Code with the Quarto extension
-Click "Render" to generate the HTML output
+## 🗂️ Data Sources
+
+- **UNICEF Mortality Data**: Youth mortality figures by country and year
+- **World Bank Metadata**: Includes GDP per capita and country-level metadata
+
+## 📈 Visualizations
+
+1. **Total Youth Deaths by Country (2021)**  
+   A bar chart showing the highest youth mortality totals by country in the most recent year.
+
+2. **Trend of Youth Deaths Over Time**  
+   A line graph showing how youth deaths have changed globally or by region between 1990 and 2021.
+
+3. **Scatterplot: GDP vs Youth Deaths**  
+   A scatterplot (with regression line) analyzing the relationship between GDP per capita and total youth deaths. GDP is plotted on a log scale.
+
+4. **Choropleth Map of Death Rates**  
+   A map visualization (if included) displaying mortality rates geographically to highlight regional disparities.
+
+## 🚀 Running the Project
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/keelythoma/Unicef_data
+   cd your-repo
+   start index.html to view site
