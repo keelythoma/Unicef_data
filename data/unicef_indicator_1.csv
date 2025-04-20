@@ -1,0 +1,226 @@
+country,alpha_2_code,alpha_3_code,numeric_code,indicator,time_period,obs_value,sex,unit_multiplier,unit_of_measure,observation_status,observation_confidentaility,time_period_activity_related_to_when_the_data_are_collected,current_age
+Afghanistan,AF,AFG,4,Annual growth rate of urban population,2020,4.070226115,Total,Units,%,Predicted,,,Total
+Albania,AL,ALB,8,Annual growth rate of urban population,2020,1.39596342,Total,Units,%,Predicted,,,Total
+Algeria,DZ,DZA,12,Annual growth rate of urban population,2020,2.630550701,Total,Units,%,Predicted,,,Total
+American Samoa,AS,ASM,16,Annual growth rate of urban population,2020,-1.18081119,Total,Units,%,Predicted,,,Total
+Andorra,AD,AND,20,Annual growth rate of urban population,2020,0.5334918154,Total,Units,%,Predicted,,,Total
+Angola,AO,AGO,24,Annual growth rate of urban population,2020,4.765738016,Total,Units,%,Predicted,,,Total
+Anguilla,AI,AIA,660,Annual growth rate of urban population,2020,1.638594072,Total,Units,%,Predicted,,,Total
+Antigua and Barbuda,AG,ATG,28,Annual growth rate of urban population,2020,-0.300015481,Total,Units,%,Predicted,,,Total
+Argentina,AR,ARG,32,Annual growth rate of urban population,2020,1.082846501,Total,Units,%,Predicted,,,Total
+Armenia,AM,ARM,51,Annual growth rate of urban population,2020,-0.6799530418,Total,Units,%,Predicted,,,Total
+Aruba,AW,ABW,533,Annual growth rate of urban population,2020,0.5349469798,Total,Units,%,Predicted,,,Total
+Australia,AU,AUS,36,Annual growth rate of urban population,2020,1.540362854,Total,Units,%,Predicted,,,Total
+Austria,AT,AUT,40,Annual growth rate of urban population,2020,0.3883299722,Total,Units,%,Predicted,,,Total
+Azerbaijan,AZ,AZE,31,Annual growth rate of urban population,2020,1.527509133,Total,Units,%,Predicted,,,Total
+Bahamas,BS,BHS,44,Annual growth rate of urban population,2020,1.136328643,Total,Units,%,Predicted,,,Total
+Bahrain,BH,BHR,48,Annual growth rate of urban population,2020,3.540677886,Total,Units,%,Predicted,,,Total
+Bangladesh,BD,BGD,50,Annual growth rate of urban population,2020,3.526722418,Total,Units,%,Predicted,,,Total
+Barbados,BB,BRB,52,Annual growth rate of urban population,2020,-0.1062038623,Total,Units,%,Predicted,,,Total
+Belarus,BY,BLR,112,Annual growth rate of urban population,2020,0.3085492202,Total,Units,%,Predicted,,,Total
+Belgium,BE,BEL,56,Annual growth rate of urban population,2020,0.6131267955,Total,Units,%,Predicted,,,Total
+Belize,BZ,BLZ,84,Annual growth rate of urban population,2020,2.428914257,Total,Units,%,Predicted,,,Total
+Benin,BJ,BEN,204,Annual growth rate of urban population,2020,3.928496616,Total,Units,%,Predicted,,,Total
+Bermuda,BM,BMU,60,Annual growth rate of urban population,2020,0.2020101022,Total,Units,%,Predicted,,,Total
+Bhutan,BT,BTN,64,Annual growth rate of urban population,2020,3.733190753,Total,Units,%,Predicted,,,Total
+"Bolivia, Plurinational State of",BO,BOL,68,Annual growth rate of urban population,2020,2.167726607,Total,Units,%,Predicted,,,Total
+Bosnia and Herzegovina,BA,BIH,70,Annual growth rate of urban population,2020,-0.4057775586,Total,Units,%,Predicted,,,Total
+Botswana,BW,BWA,72,Annual growth rate of urban population,2020,3.213500301,Total,Units,%,Predicted,,,Total
+Brazil,BR,BRA,76,Annual growth rate of urban population,2020,1.249415459,Total,Units,%,Predicted,,,Total
+"Virgin Islands, British",VG,VGB,92,Annual growth rate of urban population,2020,2.760879614,Total,Units,%,Predicted,,,Total
+Brunei,BN,BRN,96,Annual growth rate of urban population,2020,1.784230307,Total,Units,%,Predicted,,,Total
+Bulgaria,BG,BGR,100,Annual growth rate of urban population,2020,-0.2604611385,Total,Units,%,Predicted,,,Total
+Burkina Faso,BF,BFA,854,Annual growth rate of urban population,2020,5.397937122,Total,Units,%,Predicted,,,Total
+Burundi,BI,BDI,108,Annual growth rate of urban population,2020,5.569424619,Total,Units,%,Predicted,,,Total
+Cape Verde,CV,CPV,132,Annual growth rate of urban population,2020,2.19605487,Total,Units,%,Predicted,,,Total
+Cambodia,KH,KHM,116,Annual growth rate of urban population,2020,2.702828567,Total,Units,%,Predicted,,,Total
+Cameroon,CM,CMR,120,Annual growth rate of urban population,2020,3.794587093,Total,Units,%,Predicted,,,Total
+Canada,CA,CAN,124,Annual growth rate of urban population,2020,1.127701524,Total,Units,%,Predicted,,,Total
+Cayman Islands,KY,CYM,136,Annual growth rate of urban population,2020,2.519099721,Total,Units,%,Predicted,,,Total
+Central African Republic,CF,CAF,140,Annual growth rate of urban population,2020,2.218690131,Total,Units,%,Predicted,,,Total
+Chad,TD,TCD,148,Annual growth rate of urban population,2020,3.734372122,Total,Units,%,Predicted,,,Total
+Chile,CL,CHL,152,Annual growth rate of urban population,2020,1.180584305,Total,Units,%,Predicted,,,Total
+China,CN,CHN,156,Annual growth rate of urban population,2020,3.131105722,Total,Units,%,Predicted,,,Total
+Hong Kong,HK,HKG,344,Annual growth rate of urban population,2020,0.5156094667,Total,Units,%,Predicted,,,Total
+Macao,MO,MAC,446,Annual growth rate of urban population,2020,2.13537127,Total,Units,%,Predicted,,,Total
+Taiwan,TW,TWN,158,Annual growth rate of urban population,2020,0.9184114737,Total,Units,%,Predicted,,,Total
+Colombia,CO,COL,170,Annual growth rate of urban population,2020,1.702861309,Total,Units,%,Predicted,,,Total
+Comoros,KM,COM,174,Annual growth rate of urban population,2020,2.152380279,Total,Units,%,Predicted,,,Total
+Congo,CG,COG,178,Annual growth rate of urban population,2020,3.538871796,Total,Units,%,Predicted,,,Total
+Cook Islands,CK,COK,184,Annual growth rate of urban population,2020,1.026204786,Total,Units,%,Predicted,,,Total
+Costa Rica,CR,CRI,188,Annual growth rate of urban population,2020,2.69467319,Total,Units,%,Predicted,,,Total
+Croatia,HR,HRV,191,Annual growth rate of urban population,2020,-0.1437549673,Total,Units,%,Predicted,,,Total
+Cuba,CU,CUB,192,Annual growth rate of urban population,2020,0.1996857642,Total,Units,%,Predicted,,,Total
+Cyprus,CY,CYP,196,Annual growth rate of urban population,2020,1.139518088,Total,Units,%,Predicted,,,Total
+Czech Republic,CZ,CZE,203,Annual growth rate of urban population,2020,0.140572135,Total,Units,%,Predicted,,,Total
+Ivory Coast,CI,CIV,384,Annual growth rate of urban population,2020,3.086943022,Total,Units,%,Predicted,,,Total
+"Korea, Democratic People's Republic of",KP,PRK,408,Annual growth rate of urban population,2020,0.7163013214,Total,Units,%,Predicted,,,Total
+"Congo, the Democratic Republic of the",CD,COD,180,Annual growth rate of urban population,2020,4.328443533,Total,Units,%,Predicted,,,Total
+Denmark,DK,DNK,208,Annual growth rate of urban population,2020,0.5797515446,Total,Units,%,Predicted,,,Total
+Djibouti,DJ,DJI,262,Annual growth rate of urban population,2020,1.926083192,Total,Units,%,Predicted,,,Total
+Dominica,DM,DMA,212,Annual growth rate of urban population,2020,0.6547498246,Total,Units,%,Predicted,,,Total
+Dominican Republic,DO,DOM,214,Annual growth rate of urban population,2020,2.58643554,Total,Units,%,Predicted,,,Total
+Ecuador,EC,ECU,218,Annual growth rate of urban population,2020,1.874334906,Total,Units,%,Predicted,,,Total
+Egypt,EG,EGY,818,Annual growth rate of urban population,2020,1.947345006,Total,Units,%,Predicted,,,Total
+El Salvador,SV,SLV,222,Annual growth rate of urban population,2020,1.30979911,Total,Units,%,Predicted,,,Total
+Equatorial Guinea,GQ,GNQ,226,Annual growth rate of urban population,2020,5.923967538,Total,Units,%,Predicted,,,Total
+Eritrea,ER,ERI,232,Annual growth rate of urban population,2020,3.988948748,Total,Units,%,Predicted,,,Total
+Estonia,EE,EST,233,Annual growth rate of urban population,2020,-0.2451603763,Total,Units,%,Predicted,,,Total
+Swaziland,SZ,SWZ,748,Annual growth rate of urban population,2020,0.9496867505,Total,Units,%,Predicted,,,Total
+Ethiopia,ET,ETH,231,Annual growth rate of urban population,2020,4.500729118,Total,Units,%,Predicted,,,Total
+Falkland Islands (Malvinas),FK,FLK,238,Annual growth rate of urban population,2020,1.644744132,Total,Units,%,Predicted,,,Total
+Faroe Islands,FO,FRO,234,Annual growth rate of urban population,2020,1.391646689,Total,Units,%,Predicted,,,Total
+Fiji,FJ,FJI,242,Annual growth rate of urban population,2020,1.32610268,Total,Units,%,Predicted,,,Total
+Finland,FI,FIN,246,Annual growth rate of urban population,2020,0.5037399614,Total,Units,%,Predicted,,,Total
+France,FR,FRA,250,Annual growth rate of urban population,2020,0.7600516041,Total,Units,%,Predicted,,,Total
+French Guiana,GF,GUF,254,Annual growth rate of urban population,2020,3.107672256,Total,Units,%,Predicted,,,Total
+French Polynesia,PF,PYF,258,Annual growth rate of urban population,2020,1.359708661,Total,Units,%,Predicted,,,Total
+Gabon,GA,GAB,266,Annual growth rate of urban population,2020,3.434601144,Total,Units,%,Predicted,,,Total
+Gambia,GM,GMB,270,Annual growth rate of urban population,2020,4.05027151,Total,Units,%,Predicted,,,Total
+Georgia,GE,GEO,268,Annual growth rate of urban population,2020,-0.01306977775,Total,Units,%,Predicted,,,Total
+Germany,DE,DEU,276,Annual growth rate of urban population,2020,0.2581407035,Total,Units,%,Predicted,,,Total
+Ghana,GH,GHA,288,Annual growth rate of urban population,2020,3.614630464,Total,Units,%,Predicted,,,Total
+Gibraltar,GI,GIB,292,Annual growth rate of urban population,2020,0.7843118857,Total,Units,%,Predicted,,,Total
+Greece,GR,GRC,300,Annual growth rate of urban population,2020,0.2051529646,Total,Units,%,Predicted,,,Total
+Greenland,GL,GRL,304,Annual growth rate of urban population,2020,0.307179849,Total,Units,%,Predicted,,,Total
+Grenada,GD,GRD,308,Annual growth rate of urban population,2020,0.7806324552,Total,Units,%,Predicted,,,Total
+Guadeloupe,GP,GLP,312,Annual growth rate of urban population,2020,-0.3255948991,Total,Units,%,Predicted,,,Total
+Guam,GU,GUM,316,Annual growth rate of urban population,2020,0.353133617,Total,Units,%,Predicted,,,Total
+Guatemala,GT,GTM,320,Annual growth rate of urban population,2020,2.50354756,Total,Units,%,Predicted,,,Total
+Guinea,GN,GIN,324,Annual growth rate of urban population,2020,3.036614208,Total,Units,%,Predicted,,,Total
+Guinea-Bissau,GW,GNB,624,Annual growth rate of urban population,2020,3.293875628,Total,Units,%,Predicted,,,Total
+Guyana,GY,GUY,328,Annual growth rate of urban population,2020,-0.09414071623,Total,Units,%,Predicted,,,Total
+Haiti,HT,HTI,332,Annual growth rate of urban population,2020,3.686511741,Total,Units,%,Predicted,,,Total
+Honduras,HN,HND,340,Annual growth rate of urban population,2020,3.185166676,Total,Units,%,Predicted,,,Total
+Hungary,HU,HUN,348,Annual growth rate of urban population,2020,0.2989034785,Total,Units,%,Predicted,,,Total
+Iceland,IS,ISL,352,Annual growth rate of urban population,2020,1.3358732,Total,Units,%,Predicted,,,Total
+India,IN,IND,356,Annual growth rate of urban population,2020,2.423600898,Total,Units,%,Predicted,,,Total
+Indonesia,ID,IDN,360,Annual growth rate of urban population,2020,2.5618155,Total,Units,%,Predicted,,,Total
+"Iran, Islamic Republic of",IR,IRN,364,Annual growth rate of urban population,2020,2.17164551,Total,Units,%,Predicted,,,Total
+Iraq,IQ,IRQ,368,Annual growth rate of urban population,2020,2.768197476,Total,Units,%,Predicted,,,Total
+Ireland,IE,IRL,372,Annual growth rate of urban population,2020,1.643295176,Total,Units,%,Predicted,,,Total
+Isle of Man,IM,IMN,833,Annual growth rate of urban population,2020,0.6044584398,Total,Units,%,Predicted,,,Total
+Israel,IL,ISR,376,Annual growth rate of urban population,2020,1.780501499,Total,Units,%,Predicted,,,Total
+Italy,IT,ITA,380,Annual growth rate of urban population,2020,0.4702519326,Total,Units,%,Predicted,,,Total
+Jamaica,JM,JAM,388,Annual growth rate of urban population,2020,0.761552992,Total,Units,%,Predicted,,,Total
+Japan,JP,JPN,392,Annual growth rate of urban population,2020,0.6764271466,Total,Units,%,Predicted,,,Total
+Jordan,JO,JOR,400,Annual growth rate of urban population,2020,4.409820071,Total,Units,%,Predicted,,,Total
+Kazakhstan,KZ,KAZ,398,Annual growth rate of urban population,2020,1.17772654,Total,Units,%,Predicted,,,Total
+Kenya,KE,KEN,404,Annual growth rate of urban population,2020,4.111855687,Total,Units,%,Predicted,,,Total
+Kiribati,KI,KIR,296,Annual growth rate of urban population,2020,2.910154027,Total,Units,%,Predicted,,,Total
+Kuwait,KW,KWT,414,Annual growth rate of urban population,2020,3.91699008,Total,Units,%,Predicted,,,Total
+Kyrgyzstan,KG,KGZ,417,Annual growth rate of urban population,2020,1.461807574,Total,Units,%,Predicted,,,Total
+Lao People's Democratic Republic,LA,LAO,418,Annual growth rate of urban population,2020,3.809417991,Total,Units,%,Predicted,,,Total
+Latvia,LV,LVA,428,Annual growth rate of urban population,2020,-1.087682022,Total,Units,%,Predicted,,,Total
+Lebanon,LB,LBN,422,Annual growth rate of urban population,2020,1.44753475,Total,Units,%,Predicted,,,Total
+Lesotho,LS,LSO,426,Annual growth rate of urban population,2020,2.455603507,Total,Units,%,Predicted,,,Total
+Liberia,LR,LBR,430,Annual growth rate of urban population,2020,3.452429831,Total,Units,%,Predicted,,,Total
+Libyan Arab Jamahiriya,LY,LBY,434,Annual growth rate of urban population,2020,1.476655247,Total,Units,%,Predicted,,,Total
+Liechtenstein,LI,LIE,438,Annual growth rate of urban population,2020,0.5315927908,Total,Units,%,Predicted,,,Total
+Lithuania,LT,LTU,440,Annual growth rate of urban population,2020,-1.087148473,Total,Units,%,Predicted,,,Total
+Luxembourg,LU,LUX,442,Annual growth rate of urban population,2020,2.152406331,Total,Units,%,Predicted,,,Total
+Madagascar,MG,MDG,450,Annual growth rate of urban population,2020,4.311533375,Total,Units,%,Predicted,,,Total
+Malawi,MW,MWI,454,Annual growth rate of urban population,2020,3.437477572,Total,Units,%,Predicted,,,Total
+Malaysia,MY,MYS,458,Annual growth rate of urban population,2020,2.802671045,Total,Units,%,Predicted,,,Total
+Maldives,MV,MDV,462,Annual growth rate of urban population,2020,4.681860089,Total,Units,%,Predicted,,,Total
+Mali,ML,MLI,466,Annual growth rate of urban population,2020,5.109601452,Total,Units,%,Predicted,,,Total
+Malta,MT,MLT,470,Annual growth rate of urban population,2020,1.336992249,Total,Units,%,Predicted,,,Total
+Marshall Islands,MH,MHL,584,Annual growth rate of urban population,2020,-0.4585667754,Total,Units,%,Predicted,,,Total
+Martinique,MQ,MTQ,474,Annual growth rate of urban population,2020,-0.7691962548,Total,Units,%,Predicted,,,Total
+Mauritania,MR,MRT,478,Annual growth rate of urban population,2020,4.217383399,Total,Units,%,Predicted,,,Total
+Mauritius,MU,MUS,480,Annual growth rate of urban population,2020,0.0923199835,Total,Units,%,Predicted,,,Total
+Mayotte,YT,MYT,175,Annual growth rate of urban population,2020,2.902889609,Total,Units,%,Predicted,,,Total
+Mexico,MX,MEX,484,Annual growth rate of urban population,2020,1.571148933,Total,Units,%,Predicted,,,Total
+"Micronesia, Federated States of",FM,FSM,583,Annual growth rate of urban population,2020,0.1438207995,Total,Units,%,Predicted,,,Total
+Monaco,MC,MCO,492,Annual growth rate of urban population,2020,0.6125218681,Total,Units,%,Predicted,,,Total
+Mongolia,MN,MNG,496,Annual growth rate of urban population,2020,2.283132364,Total,Units,%,Predicted,,,Total
+Montenegro,ME,MNE,499,Annual growth rate of urban population,2020,0.644738274,Total,Units,%,Predicted,,,Total
+Montserrat,MS,MSR,500,Annual growth rate of urban population,2020,6.389069509,Total,Units,%,Predicted,,,Total
+Morocco,MA,MAR,504,Annual growth rate of urban population,2020,2.026714818,Total,Units,%,Predicted,,,Total
+Mozambique,MZ,MOZ,508,Annual growth rate of urban population,2020,3.831139616,Total,Units,%,Predicted,,,Total
+Myanmar,MM,MMR,104,Annual growth rate of urban population,2020,1.435493113,Total,Units,%,Predicted,,,Total
+Namibia,,NAM,516,Annual growth rate of urban population,2020,3.752901785,Total,Units,%,Predicted,,,Total
+Nauru,NR,NRU,520,Annual growth rate of urban population,2020,0.8155923695,Total,Units,%,Predicted,,,Total
+Nepal,NP,NPL,524,Annual growth rate of urban population,2020,2.891626493,Total,Units,%,Predicted,,,Total
+Netherlands,NL,NLD,528,Annual growth rate of urban population,2020,1.311431289,Total,Units,%,Predicted,,,Total
+New Caledonia,NC,NCL,540,Annual growth rate of urban population,2020,1.909201802,Total,Units,%,Predicted,,,Total
+New Zealand,NZ,NZL,554,Annual growth rate of urban population,2020,1.333339816,Total,Units,%,Predicted,,,Total
+Nicaragua,NI,NIC,558,Annual growth rate of urban population,2020,1.636578721,Total,Units,%,Predicted,,,Total
+Niger,NE,NER,562,Annual growth rate of urban population,2020,3.646303269,Total,Units,%,Predicted,,,Total
+Nigeria,NG,NGA,566,Annual growth rate of urban population,2020,4.418096217,Total,Units,%,Predicted,,,Total
+Niue,NU,NIU,570,Annual growth rate of urban population,2020,1.2817362,Total,Units,%,Predicted,,,Total
+"Macedonia, the former Yugoslav Republic of",MK,MKD,807,Annual growth rate of urban population,2020,0.1625258897,Total,Units,%,Predicted,,,Total
+Northern Mariana Islands,MP,MNP,580,Annual growth rate of urban population,2020,-2.211604584,Total,Units,%,Predicted,,,Total
+Norway,NO,NOR,578,Annual growth rate of urban population,2020,1.276519189,Total,Units,%,Predicted,,,Total
+Oman,OM,OMN,512,Annual growth rate of urban population,2020,4.040941554,Total,Units,%,Predicted,,,Total
+Pakistan,PK,PAK,586,Annual growth rate of urban population,2020,2.408904847,Total,Units,%,Predicted,,,Total
+Palau,PW,PLW,585,Annual growth rate of urban population,2020,0.2280551356,Total,Units,%,Predicted,,,Total
+Panama,PA,PAN,591,Annual growth rate of urban population,2020,2.158935151,Total,Units,%,Predicted,,,Total
+Papua New Guinea,PG,PNG,598,Annual growth rate of urban population,2020,2.769508278,Total,Units,%,Predicted,,,Total
+Paraguay,PY,PRY,600,Annual growth rate of urban population,2020,1.774983245,Total,Units,%,Predicted,,,Total
+Peru,PE,PER,604,Annual growth rate of urban population,2020,1.391519887,Total,Units,%,Predicted,,,Total
+Philippines,PH,PHL,608,Annual growth rate of urban population,2020,1.863088563,Total,Units,%,Predicted,,,Total
+Poland,PL,POL,616,Annual growth rate of urban population,2020,-0.140284153,Total,Units,%,Predicted,,,Total
+Portugal,PT,PRT,620,Annual growth rate of urban population,2020,0.9417077133,Total,Units,%,Predicted,,,Total
+Puerto Rico,PR,PRI,630,Annual growth rate of urban population,2020,-0.7877010798,Total,Units,%,Predicted,,,Total
+Qatar,QA,QAT,634,Annual growth rate of urban population,2020,7.05872239,Total,Units,%,Predicted,,,Total
+South Korea,KR,KOR,410,Annual growth rate of urban population,2020,0.5946786113,Total,Units,%,Predicted,,,Total
+"Moldova, Republic of",MD,MDA,498,Annual growth rate of urban population,2020,-1.717104072,Total,Units,%,Predicted,,,Total
+Romania,RO,ROU,642,Annual growth rate of urban population,2020,-0.4654921642,Total,Units,%,Predicted,,,Total
+Russian Federation,RU,RUS,643,Annual growth rate of urban population,2020,0.05031356542,Total,Units,%,Predicted,,,Total
+Rwanda,RW,RWA,646,Annual growth rate of urban population,2020,3.039292939,Total,Units,%,Predicted,,,Total
+Réunion,RE,REU,638,Annual growth rate of urban population,2020,1.368943863,Total,Units,%,Predicted,,,Total
+"Saint Helena, Ascension and Tristan da Cunha",SH,SHN,654,Annual growth rate of urban population,2020,-0.5365816351,Total,Units,%,Predicted,,,Total
+Saint Kitts and Nevis,KN,KNA,659,Annual growth rate of urban population,2020,-0.06655873303,Total,Units,%,Predicted,,,Total
+Saint Lucia,LC,LCA,662,Annual growth rate of urban population,2020,-1.292394021,Total,Units,%,Predicted,,,Total
+Saint Pierre and Miquelon,PM,SPM,666,Annual growth rate of urban population,2020,-0.2445220295,Total,Units,%,Predicted,,,Total
+St. Vincent and the Grenadines,VC,VCT,670,Annual growth rate of urban population,2020,0.3619526378,Total,Units,%,Predicted,,,Total
+Samoa,WS,WSM,882,Annual growth rate of urban population,2020,-0.2403791461,Total,Units,%,Predicted,,,Total
+San Marino,SM,SMR,674,Annual growth rate of urban population,2020,1.332609051,Total,Units,%,Predicted,,,Total
+Sao Tome and Principe,ST,STP,678,Annual growth rate of urban population,2020,3.572317947,Total,Units,%,Predicted,,,Total
+Saudi Arabia,SA,SAU,682,Annual growth rate of urban population,2020,2.70136525,Total,Units,%,Predicted,,,Total
+Senegal,SN,SEN,686,Annual growth rate of urban population,2020,3.351454696,Total,Units,%,Predicted,,,Total
+Serbia,RS,SRB,688,Annual growth rate of urban population,2020,-0.03874679238,Total,Units,%,Predicted,,,Total
+Seychelles,SC,SYC,690,Annual growth rate of urban population,2020,1.943608687,Total,Units,%,Predicted,,,Total
+Sierra Leone,SL,SLE,694,Annual growth rate of urban population,2020,3.676256427,Total,Units,%,Predicted,,,Total
+Singapore,SG,SGP,702,Annual growth rate of urban population,2020,1.795322657,Total,Units,%,Predicted,,,Total
+Slovakia,SK,SVK,703,Annual growth rate of urban population,2020,-0.143839473,Total,Units,%,Predicted,,,Total
+Slovenia,SI,SVN,705,Annual growth rate of urban population,2020,0.7023941958,Total,Units,%,Predicted,,,Total
+Solomon Islands,SB,SLB,90,Annual growth rate of urban population,2020,4.378265761,Total,Units,%,Predicted,,,Total
+Somalia,SO,SOM,706,Annual growth rate of urban population,2020,4.60738758,Total,Units,%,Predicted,,,Total
+South Africa,ZA,ZAF,710,Annual growth rate of urban population,2020,1.88968162,Total,Units,%,Predicted,,,Total
+South Sudan,SS,SSD,728,Annual growth rate of urban population,2020,3.584849216,Total,Units,%,Predicted,,,Total
+Spain,ES,ESP,724,Annual growth rate of urban population,2020,0.99301602,Total,Units,%,Predicted,,,Total
+Sri Lanka,LK,LKA,144,Annual growth rate of urban population,2020,0.7779193428,Total,Units,%,Predicted,,,Total
+"Palestinian Territory, Occupied",PS,PSE,275,Annual growth rate of urban population,2020,2.538174466,Total,Units,%,Predicted,,,Total
+Sudan,SD,SDN,736,Annual growth rate of urban population,2020,2.886157226,Total,Units,%,Predicted,,,Total
+Suriname,SR,SUR,740,Annual growth rate of urban population,2020,1.107088996,Total,Units,%,Predicted,,,Total
+Sweden,SE,SWE,752,Annual growth rate of urban population,2020,0.9617826328,Total,Units,%,Predicted,,,Total
+Switzerland,CH,CHE,756,Annual growth rate of urban population,2020,0.913711476,Total,Units,%,Predicted,,,Total
+Syrian Arab Republic,SY,SYR,760,Annual growth rate of urban population,2020,1.465278698,Total,Units,%,Predicted,,,Total
+Tajikistan,TJ,TJK,762,Annual growth rate of urban population,2020,2.175222938,Total,Units,%,Predicted,,,Total
+Thailand,TH,THA,764,Annual growth rate of urban population,2020,2.947740051,Total,Units,%,Predicted,,,Total
+Timor-Leste,TL,TLS,626,Annual growth rate of urban population,2020,3.082685948,Total,Units,%,Predicted,,,Total
+Togo,TG,TGO,768,Annual growth rate of urban population,2020,3.738556801,Total,Units,%,Predicted,,,Total
+Tonga,TO,TON,776,Annual growth rate of urban population,2020,0.1394651677,Total,Units,%,Predicted,,,Total
+Trinidad and Tobago,TT,TTO,780,Annual growth rate of urban population,2020,0.3872601079,Total,Units,%,Predicted,,,Total
+Tunisia,TN,TUN,788,Annual growth rate of urban population,2020,1.422716472,Total,Units,%,Predicted,,,Total
+Turkmenistan,TM,TKM,795,Annual growth rate of urban population,2020,2.131894631,Total,Units,%,Predicted,,,Total
+Turks and Caicos Islands,TC,TCA,796,Annual growth rate of urban population,2020,4.577592437,Total,Units,%,Predicted,,,Total
+Tuvalu,TV,TUV,798,Annual growth rate of urban population,2020,2.230971311,Total,Units,%,Predicted,,,Total
+Turkey,TR,TUR,792,Annual growth rate of urban population,2020,2.064244383,Total,Units,%,Predicted,,,Total
+Uganda,UG,UGA,800,Annual growth rate of urban population,2020,5.418003827,Total,Units,%,Predicted,,,Total
+Ukraine,UA,UKR,804,Annual growth rate of urban population,2020,-0.3390656196,Total,Units,%,Predicted,,,Total
+United Arab Emirates,AE,ARE,784,Annual growth rate of urban population,2020,5.35102165,Total,Units,%,Predicted,,,Total
+United Kingdom,GB,GBR,826,Annual growth rate of urban population,2020,0.9296588101,Total,Units,%,Predicted,,,Total
+"Tanzania, United Republic of",TZ,TZA,834,Annual growth rate of urban population,2020,4.94891948,Total,Units,%,Predicted,,,Total
+United States,US,USA,840,Annual growth rate of urban population,2020,1.039210661,Total,Units,%,Predicted,,,Total
+Uruguay,UY,URY,858,Annual growth rate of urban population,2020,0.3710516557,Total,Units,%,Predicted,,,Total
+Uzbekistan,UZ,UZB,860,Annual growth rate of urban population,2020,1.835138472,Total,Units,%,Predicted,,,Total
+Vanuatu,VU,VUT,548,Annual growth rate of urban population,2020,3.084302218,Total,Units,%,Predicted,,,Total
+"Venezuela, Bolivarian Republic of",VE,VEN,862,Annual growth rate of urban population,2020,0.7716169863,Total,Units,%,Predicted,,,Total
+Vietnam,VN,VNM,704,Annual growth rate of urban population,2020,2.991278258,Total,Units,%,Predicted,,,Total
+"Virgin Islands, U.S.",VI,VIR,850,Annual growth rate of urban population,2020,-0.1842031888,Total,Units,%,Predicted,,,Total
+Yemen,YE,YEM,887,Annual growth rate of urban population,2020,4.365326214,Total,Units,%,Predicted,,,Total
+Zambia,ZM,ZMB,894,Annual growth rate of urban population,2020,4.274749112,Total,Units,%,Predicted,,,Total
+Zimbabwe,ZW,ZWE,716,Annual growth rate of urban population,2020,1.117835035,Total,Units,%,Predicted,,,Total

@@ -1,0 +1,24 @@
+---
+title: "UNICEF Report"
+author: "Data Analyst - UNICEF"
+format:
+  html:
+    embed-resources: true
+    code-fold: true
+---
+
+## Introduction
+This report aims to raise awareness about a critical world issue. The data used in this report is sourced from UNICEF indicators...
+
+## Load Data
+
+```{python}
+import pandas as pd
+
+# Load the datasets
+unicef_data_1 = pd.read_csv('unicef_indicator_1.csv')
+unicef_data_2 = pd.read_csv('unicef_indicator_2.csv')
+metadata = pd.read_csv('unicef_metadata.csv')
+
+# Display the first few rows of each dataset
+unicef_data_1.head(), unicef_data_2.head(), metadata.head()

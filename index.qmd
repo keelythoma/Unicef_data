@@ -1,0 +1,276 @@
+---
+title: "UNICEF Data Analysis"
+author: "Keely Thoma"
+date: today
+format:
+  html:
+    embed-resources: true
+    code-fold: true
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+    fig-width: 8
+    fig-height: 6
+    html-math-method: katex
+execute:
+  cache: true
+  echo: true
+  warning: false
+---
+
+## Introduction
+
+Youth well-being is a cornerstone of future development, yet many young people around the world face challenges to health and safety — particularly in rapidly urbanizing regions. In this report, we explore global patterns in youth mortality and urbanization using data from UNICEF.
+
+We ask:  
+- How does youth mortality differ by country and gender?
+- What trends exist over time?
+- Is there a link between youth mortality and development indicators like GDP or life expectancy?
+- How does rapid urban growth play into this?
+
+We'll answer these questions through data visualizations and analysis.
+
+## Data Overview
+
+```{python}
+#| label: data-import
+#| message: false
+
+import pandas as pd
+import numpy as np
+from plotnine import *
+import matplotlib.pyplot as plt
+import geopandas as gpd
+import geodatasets
+
+# Import data
+indicator1 = pd.read_csv("data/unicef_indicator_1.csv")
+indicator2 = pd.read_csv("data/unicef_indicator_2.csv")
+metadata = pd.read_csv("data/unicef_metadata.csv")
+
+# print("indicator1 columns:", indicator1.columns.tolist())
+# print("indicator2 columns:", indicator2.columns.tolist())
+# print("metadata columns:", metadata.columns.tolist())
+
+# Display first few rows of each dataset
+print("Indicator 1 Preview:")
+display(indicator1.head())
+
+print("\nIndicator 2 Preview:")
+display(indicator2.head())
+
+print("\nMetadata Preview:")
+display(metadata.head())
+
+# Basic information about the datasets
+print("\nIndicator 1 Shape:", indicator1.shape)
+print("Indicator 2 Shape:", indicator2.shape)
+print("Metadata Shape:", metadata.shape)
+```
+
+## Data Preparation and Technology overview
+
+For this project, I used Python as the primary tool for data preparation, analysis, and visualization. Libraries like Pandas helped me efficiently clean and manipulate the data, while Plotnine was used to create elegant, grammar-of-graphics-style visualizations. I wrote and rendered the final report using Quarto, which allowed me to combine code, visualizations, and narrative in a clean, reproducible format. The entire workflow was developed in Visual Studio Code, with a virtual environment set up to manage dependencies and ensure consistency.
+
+The data itself came from UNICEF, including a metadata file containing country-level details and several indicator files tracking various metrics over time—such as youth mortality, GDP per capita, and related social indicators. My goal was to investigate how socioeconomic factors like income might relate to youth deaths (ages 15–24) across countries from 1990 to 2021. I began by inspecting and cleaning each dataset, merging them where necessary using ISO country codes, and filtering them down to the relevant indicators. Once the data was structured properly, I used visual tools like scatter plots and linear trend lines to explore potential correlations, often applying log transformations to account for skewed distributions.
+
+```{python}
+#| label: data-preparation
+
+# Clean and rename columns
+urban_growth_clean = indicator1[["country", "alpha_3_code", "obs_value"]].rename(
+    columns={"obs_value": "urban_growth_rate"}
+)
+
+youth_deaths_total = indicator2[indicator2["sex"] == "Total"]
+youth_deaths_yearly = youth_deaths_total.groupby(["country", "time_period"])["obs_value"].sum().reset_index()
+youth_deaths_yearly.rename(columns={"obs_value": "total_deaths", "time_period": "year"}, inplace=True)
+
+# Prepare metadata for merging
+metadata_clean = metadata.rename(columns={"year": "year"})
+
+# Combine data for scatterplot
+combined_data = pd.merge(
+    youth_deaths_yearly,
+    metadata_clean,
+    on=["country", "year"],
+    how="inner"
+).dropna(subset=["GDP per capita (constant 2015 US$)", "Life expectancy at birth, total (years)"])
+```
+
+## Visualization 1: World Map of Urban Growth
+
+```{python}
+#| label: world-map
+#| fig-cap: "Urban Population Growth Rate by Country (2020)"
+
+import pandas as pd
+import geopandas as gpd
+import matplotlib.pyplot as plt
+
+# — Prep the indicator data —
+indicator1 = pd.read_csv("data/unicef_indicator_1.csv")
+urban_growth_clean = (
+    indicator1[["country","alpha_3_code","obs_value"]]
+    .rename(columns={"obs_value":"urban_growth_rate"})
+)
+
+# — Load GeoJSON boundaries —
+world = gpd.read_file(
+    "https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson"
+)
+# print(list(world.columns))
+
+# — Merge & Plot —
+world_data = world.merge(urban_growth_clean,
+                        how="left",
+                        left_on="ISO3166-1-Alpha-3",
+                        right_on="alpha_3_code")
+fig, ax = plt.subplots(figsize=(12,8))
+world_data.plot(column="urban_growth_rate",
+                cmap="Blues",
+                edgecolor="gray",
+                legend=True,
+                ax=ax,
+                missing_kwds={"color":"lightgray","label":"No data"})
+ax.set_title("Urban Population Growth Rate by Country (2020)")
+ax.axis("off")
+plt.tight_layout()
+
+```
+
+## Visualization 2: Bar Chart - Top 10 Countries by Youth Deaths (2020)
+
+```{python}
+#| label: bar-chart
+#| fig-cap: "Top 10 Countries by Youth Deaths in 2020"
+
+top10_2020 = youth_deaths_yearly[youth_deaths_yearly["year"] == 2020].nlargest(10, "total_deaths")
+
+(
+    ggplot(top10_2020, aes(x="reorder(country, -total_deaths)", y="total_deaths"))
+    + geom_bar(stat="identity", fill="#2c7fb8")
+    + coord_flip()
+    + labs(x="Country", y="Deaths", title="Top 10 Countries by Youth Deaths (Age 15–24) in 2020")
+    + theme_minimal()
+)
+```
+
+## Visualization 3: Scatterplot with Regression - Deaths vs GDP
+
+```{python}
+#| label: scatterplot
+#| fig-cap: "Youth Deaths vs. GDP per Capita (1990–2021)"
+
+import pandas as pd
+import numpy as np
+from plotnine import *
+import matplotlib.pyplot as plt
+import geopandas as gpd
+import geodatasets
+
+# Import data
+indicator1 = pd.read_csv("data/unicef_indicator_1.csv")
+indicator2 = pd.read_csv("data/unicef_indicator_2.csv")
+metadata = pd.read_csv("data/unicef_metadata.csv")
+
+# Prepare metadata for merging
+metadata_clean = metadata.rename(columns={"year": "year"})
+
+# Clean and rename columns
+urban_growth_clean = indicator1[["country", "alpha_3_code", "obs_value"]].rename(
+    columns={"obs_value": "urban_growth_rate"}
+)
+
+youth_deaths_total = indicator2[indicator2["sex"] == "Total"]
+youth_deaths_yearly = youth_deaths_total.groupby(["country", "time_period"])["obs_value"].sum().reset_index()
+youth_deaths_yearly.rename(columns={"obs_value": "total_deaths", "time_period": "year"}, inplace=True)
+
+combined_data = pd.merge(
+    youth_deaths_yearly,
+    metadata_clean,
+    on=["country", "year"],
+    how="inner"
+).dropna(subset=["GDP per capita (constant 2015 US$)", "Life expectancy at birth, total (years)"])
+
+# Optional: peek at the first few rows to confirm the columns exist
+print(combined_data[[
+    "country",
+    "year",
+    "GDP per capita (constant 2015 US$)",
+    "total_deaths"
+]].head())
+
+# The scatterplot itself
+(
+    ggplot(combined_data,
+           aes(x="GDP per capita (constant 2015 US$)",
+               y="total_deaths"))
+    + geom_point(alpha=0.4, color="#41b6c4")
+    + geom_smooth(method="lm", color="#253494")
+    + scale_x_log10()
+    + labs(x="GDP per Capita (log scale)",
+           y="Total Youth Deaths (Age 15–24)",
+           title="Relationship Between GDP per Capita and Youth Deaths (1990–2021)")
+    + theme_minimal()
+)
+```
+
+## Visualization 4: Time Series - Global Youth Deaths Over Time
+
+```{python}
+#| label: time-series
+#| fig-cap: "Global Youth Deaths Over Time (1990–2021)"
+
+from plotnine import *
+
+global_trend = (
+  youth_deaths_yearly
+  .groupby("year")["total_deaths"].sum()
+  .reset_index()
+)
+
+(
+  ggplot(global_trend, aes(x="year", y="total_deaths"))
+  + geom_line(size=1.2)
+  + labs(title="Global Youth Deaths (Age 15–24) 1990–2021",
+         x="Year", y="Total Deaths")
+  + theme_minimal()
+)
+```
+
+## Key Findings
+
+- Urban population growth is concentrated in parts of Africa, Asia, and Latin America.
+- Youth mortality remains highest in low-income countries, particularly in Sub-Saharan Africa and South Asia.
+- There is a clear **negative correlation between GDP per capita and youth deaths** — wealthier nations have fewer deaths.
+- While global youth deaths have generally declined since 1990, progress has not been uniform.
+
+## Conclusions and Recommendations
+
+Rapid urbanization, if not well-managed, may place stress on healthcare systems and contribute to poor youth outcomes. Countries with low GDP and limited health infrastructure report the highest youth mortality.
+
+To reduce youth deaths, governments should invest in:
+- Health education and outreach
+- Adolescent health services
+- Urban planning and safety programs
+
+Further research should examine regional policies and infrastructure in more detail to explain the observed differences.
+
+## References
+
+- United Nations Children’s Fund (UNICEF). (2023). *State of the World’s Children 2023: For Every Child, Vaccination*. Retrieved from https://www.unicef.org/reports/state-worlds-children-2023
+
+- World Bank. (2023). *World Development Indicators*. Retrieved from https://databank.worldbank.org/source/world-development-indicators
+
+- United Nations. (2018). *World Urbanization Prospects: The 2018 Revision*. Retrieved from https://population.un.org/wup/
+
+- World Health Organization (WHO). (2022). *Global Health Estimates 2022: Deaths by Cause, Age, Sex, by Country and by Region, 2000–2019*. Retrieved from https://www.who.int/data/gho/data/themes/mortality-and-global-health-estimates
+
+- UNICEF Data. (2023). *Monitoring the Situation of Children and Women*. Retrieved from https://data.unicef.org/
+
+- OECD. (2019). *The Future of Urban Development and Youth Inclusion*. Retrieved from https://www.oecd.org/governance/the-future-of-urban-development-and-youth-inclusion.pdf
+
+- World Health Organization (WHO). (2019). *Adolescent Health and Development*. Retrieved from https://www.who.int/maternal_child_adolescent/topics/adolescence/en/
+
+- United Nations Department of Economic and Social Affairs (UN DESA). (2021). *World Social Report 2021: Reconsidering Rural Development*. Retrieved from https://www.un.org/development/desa/dspd/world-social-report/2021-2.html
